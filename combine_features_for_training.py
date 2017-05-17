@@ -1,4 +1,4 @@
-__author__ = 'luoyuan'
+
 '''this py file just combine the account_equiry features and demogh features for the training.
 Final features saved to file './final_features'. '''
 
