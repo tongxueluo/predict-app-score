@@ -74,7 +74,7 @@ def xgmodelfit(alg, df_train, df_test, useTrainCV=True, cv_folds=5, return_gini=
 
     #the feature importance vasulization
     if plot_import:
-        plot_importance(alg, importance_type='gain', max_num_features=60)
+        plot_importance(alg, importance_type='gain', max_num_features=15)
         plt.show()
     if return_gini:
         if return_feat_importance:
@@ -94,9 +94,9 @@ def xgradient_boost(df_train, df_test, return_feat_importance=False, plot_import
     else:
         xgmodelfit(xgb1, df_train, df_test, plot_import=plot_import)
 
-def WOE(good_acounts, bad_acounts, g_total, b_total, x=0.5):
-    pg = (good_acounts+0.5)/g_total
-    gb = (bad_acounts+0.5)/b_total
+def WOE(good_acounts, bad_acounts, g_total, b_total, x=0.5):  #x defined for preventing gb=0
+    pg = (good_acounts+x)/g_total
+    gb = (bad_acounts+x)/b_total
     return np.log(pg/gb)
 
 def iv_caculator(df_data, col_ca = 'categories'):
@@ -123,7 +123,6 @@ def iv(df_data,col, bin_no = 5):
     min_ = min(uniques)
     max_ = max(uniques)
     labels_ = range(bin_no)
-    step_ = 1
     if length>bin_no:
         max_min = max_ - min_
         gap = float(max_min)/bin_no
