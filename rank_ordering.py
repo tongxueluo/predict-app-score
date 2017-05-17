@@ -1,4 +1,4 @@
-__author__ = 'luoyuan'
+
 '''this py file generate rank_order report. saved to './report'''''
 
 
