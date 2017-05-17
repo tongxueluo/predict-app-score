@@ -1,4 +1,4 @@
-__author__ = 'luoyuan'
+
 '''This py file used for training the final data.
    It uses xgboost classifier for training.
    It reports both the gini for the test data. Also the gini for the cross validation of training data.'./report.
