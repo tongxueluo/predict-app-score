@@ -62,7 +62,7 @@ def xgmodelfit(alg, df_train, df_test, useTrainCV=True, cv_folds=5, return_gini=
     dtest_predprob = alg.predict_proba(df_test[features])[:,1]
     gini_test = 2*sklearn.metrics.roc_auc_score(df_test[target], dtest_predprob)-1
     print "Gini (Test): %f" % gini_test
-    print >> f, 'Gini (CV train): %f'% gini_test
+    print >> f, 'Gini (test): %f'% gini_test
     print >> f, 'Model details: %s'% alg
     print >> f, '%s features used'% len(features)
 
