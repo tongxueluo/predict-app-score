@@ -1,4 +1,3 @@
-__author__ = 'luoyuan'
 
 '''this py file get features from (preprocessed) demographic data data_70&30.
 Main process here is convert categorical variables into dummy/indicator variables.
