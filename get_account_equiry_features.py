@@ -1,4 +1,4 @@
-__author__ = 'luoyuan'
+
 '''this py file construct features from (preprocessed) account_ and equiry_ data,
 the meaning of the features can be understood as their names,
 as well as the functions that get them.
