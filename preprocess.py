@@ -1,4 +1,4 @@
-__author__ = 'luoyuan'
+
 '''the preprocess.py load and preprocess the raw data
 Perform functions like 1) replace nan values and missing data,
                        2) convert date-month-year to numbers for further feature engineering
