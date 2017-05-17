@@ -7,5 +7,5 @@ combine_features_for_training.py for combining these two sets to get final featu
 
 model_train_test.py for training the model. Model reports generated.
 
-Input: ./raw_data_folder. \n
+Input: ./raw_data_folder.  
 Output after this data_processing-modeling pipeline: ./report folder with gini, rank ordering and features' Information Value reports.  
