@@ -5,4 +5,6 @@ get_account_equiry_features.py and get_demogh_features.py for feature engineerin
 
 combine_features_for_training.py for combining these two sets to get final features for training. 
 
-model_train_test.py for training the model. Model reports generated. 
+model_train_test.py for training the model. Model reports generated.
+
+Input: ./raw_data_folder. Output after this pipeline: ./report folder with gini, rank ordering and features' Information Value reports.  
