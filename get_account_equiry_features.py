@@ -4,7 +4,6 @@ the meaning of the features can be understood as their names,
 as well as the functions that get them.
 The features (together with the targets) saved to file './accout_equiry_data'''
 
-
 import os
 import numpy as np
 import pandas as pd
