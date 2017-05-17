@@ -1,8 +1,6 @@
 
 '''this py file generate rank_order report. saved to './report'''''
 
-
-
 import pandas as pd
 import numpy as np
 
