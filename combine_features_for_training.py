@@ -54,7 +54,7 @@ class get_final_features:
         print 'x_test.shape%s, y_test.shape=%s'%(x_test.shape,y_test.shape)
         print 'len(features): ',len(feature_names)
 
-        output_file = './final_features'
+        output_file = './train_test_data'
         if not os.path.exists(output_file):
             os.makedirs(output_file)
         np.save(output_file+'/x_train.npy', x_train)
