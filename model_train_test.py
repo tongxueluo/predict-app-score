@@ -178,7 +178,7 @@ class model:
 
 if __name__ == '__main__':
     start_time = time.time()
-    input_path = './final_features'
+    input_path = './train_test_data'
     classifer = model(input_path)
     classifer.train()
     print '-----running time: %s----------'%(time.time()-start_time)
